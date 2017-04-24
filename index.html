@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html class="no-js">
 <html lang="ja">
 
 <head>
@@ -8,12 +7,45 @@
     <title>bluemove</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 
-<body>
-    <video controls autoplay>
-        <source src="myvideo/Pixar_2.m4v" type="video/mp4">
-        <p>※ご利用のブラウザでは再生することができません。</p>
+<body bgcolor="#00000" oncontextmenu="return false;">
+    <div class="jinvert-scroll"></div>
+    <div class="jinvert-bg">
+        <div class="wrapper">
+            <div class="header"></div>
+            <div class="clearfix">
+                <ul>
+                    <li>
+                        <div class="contents">
+                            <video autoplay style=" width:  500px; ">
+                                <source src="myvideo/Pixar_2.m4v" type="video/mp4">
+                                <p>※ご利用のブラウザでは再生することができません。</p>
+                            </video>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contentslineone">
+                            <video controls "width:500px; ">
+                                <source src="myvideo/Dreamworksblue.m4v" type="video/mp4">
+                            </video>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+    <!--▼jQueryの導入▼-->
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="JS/Controlshut.js"></script>
+    <script>
+        $.jInvertScroll(['.jinvert-scroll', '.jinvert-bg'], { //横スクロールさせる要素を指定。カンマ区切りで複数可。
+            height: 18000 //この値が大きいほどスクロールスピードが遅くなる。
+        });
+    </script>
 </body>
 
 </html>

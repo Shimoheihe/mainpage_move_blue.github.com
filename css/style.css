@@ -1,0 +1,74 @@
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.wrapper {
+    width: 2500px;
+    margin:0 auto;
+}
+
+.header{
+  width:2500px;
+  height:80px;
+  background-color: #fff;
+  background-image:url("../img/映画.png") ;
+  font-size:3em;
+  text-align : center;
+}
+
+.contents{
+  width: 1000px;
+  min-height:300px;
+  margin-top:1.5%;
+  margin-bottom: 1.5%;
+  font-size: 1.6em;
+  position: relative;
+}
+.contentslineone{
+  width: 1000px;
+  min-height:300px;
+  margin-top:1.5%;
+  margin-bottom: 1.5%;
+  font-size: 1.6em;
+  position: relative;
+}
+
+.footer{
+  width: 2500px;
+  height:100px;
+  background-color: #fff;
+  background-image:url("../img/映画.png") ;
+  font-size:1.4em;
+  text-align : center;
+}
+
+.jinvert-bg {
+    background-color: #000;
+    background-size: cover;
+    position: fixed; /* おまじない */
+    top: 0;
+    left: 0;
+    z-index: 1; /* パララックスの場合はここを調整して重ねていく */
+    width: 2500px; /* スクロール幅。パララックスの場合はここを調整して奥行きを表現(大きいほど速くスクロールする) */
+    height: 100%;
+}
+
+.jinvert-scroll {
+    padding: 1%;
+    position: fixed; /* おまじない */
+    top: 0;
+    left: 0;
+    z-index: 2; /* パララックスの場合はここを調整して重ねていく */
+    width: 900%; /* レスポンシブスクロール幅。パララックスの場合はここを調整して奥行きを表現(大きいほど速くスクロールする) */
+    height: 98%;
+}
+
+li {
+    display: inline-block
+}
