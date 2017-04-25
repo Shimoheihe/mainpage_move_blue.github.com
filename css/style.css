@@ -3,6 +3,9 @@ video {
     max-width: 100%;
     height: auto;
 }
+li {
+    display: inline-block
+}
 .clearfix:after {
     content: "";
     clear: both;
@@ -51,7 +54,7 @@ video {
 .jinvert-bg {
     background-color: #000;
     background-size: cover;
-    position: fixed; /* おまじない */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1; /* パララックスの場合はここを調整して重ねていく */
@@ -61,14 +64,10 @@ video {
 
 .jinvert-scroll {
     padding: 1%;
-    position: fixed; /* おまじない */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 2; /* パララックスの場合はここを調整して重ねていく */
     width: 900%; /* レスポンシブスクロール幅。パララックスの場合はここを調整して奥行きを表現(大きいほど速くスクロールする) */
     height: 98%;
-}
-
-li {
-    display: inline-block
 }

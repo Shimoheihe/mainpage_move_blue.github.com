@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/reset.css">
 </head>
 
-<body bgcolor="#00000" oncontextmenu="return false;">
+<body bgcolor="#000" oncontextmenu="return false;">
     <div class="jinvert-scroll"></div>
     <div class="jinvert-bg">
         <div class="wrapper">
@@ -20,7 +20,7 @@
                 <ul>
                     <li>
                         <div class="contents">
-                            <video autoplay style=" width:  500px; ">
+                            <video autoplay style="width:500px;">
                                 <source src="myvideo/Pixar_2.m4v" type="video/mp4">
                                 <p>※ご利用のブラウザでは再生することができません。</p>
                             </video>
@@ -28,24 +28,24 @@
                     </li>
                     <li>
                         <div class="contentslineone">
-                            <video controls "width:500px; ">
-                                <source src="myvideo/Dreamworksblue.m4v" type="video/mp4">
+                            <video autoplay>
+                                <source src="myvideo/Dreamworksblue.m4v" type="video/mp4" />
                             </video>
                         </div>
                     </li>
                 </ul>
+                <div class="footer"></div>
             </div>
-            <div class="footer"></div>
         </div>
-    </div>
-    <!--▼jQueryの導入▼-->
-    <script src="http://code.jquery.com/jquery.min.js"></script>
-    <script src="JS/Controlshut.js"></script>
-    <script>
-        $.jInvertScroll(['.jinvert-scroll', '.jinvert-bg'], { //横スクロールさせる要素を指定。カンマ区切りで複数可。
-            height: 18000 //この値が大きいほどスクロールスピードが遅くなる。
-        });
-    </script>
+        <!--▼jQueryの導入▼-->
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="JS/Controlshut.js"></script>
+        <script src="JS/pause.js"></script>
+        <script>
+            $.jInvertScroll(['.jinvert-scroll', '.jinvert-bg'], { //横スクロールさせる要素を指定。カンマ区切りで複数可。
+                height: 18000 //この値が大きいほどスクロールスピードが遅くなる。
+            });
+        </script>
 </body>
 
 </html>
