@@ -12,40 +12,39 @@
 </head>
 
 <body bgcolor="#000" oncontextmenu="return false;">
-    <div class="jinvert-scroll"></div>
-    <div class="jinvert-bg">
-        <div class="wrapper">
-            <div class="header"></div>
-            <div class="clearfix">
-                <ul>
-                    <li>
-                        <div class="contents">
-                            <video autoplay style="width:500px;">
-                                <source src="myvideo/Pixar_2.m4v" type="video/mp4">
-                                <p>※ご利用のブラウザでは再生することができません。</p>
-                            </video>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contentslineone">
-                            <video autoplay>
-                                <source src="myvideo/Dreamworksblue.m4v" type="video/mp4" />
-                            </video>
-                        </div>
-                    </li>
-                </ul>
+    <div class="hareruya-scroll">
+        <div class="hareruya-bg">
+            <div class="wrapper">
+                <div class="header"></div>
+                <div class="clearfix">
+                    <ul>
+                        <li>
+                            <div class="contents">
+                                <video id="partone">
+                                    <source src="myvideo/Pixar_2.m4v">
+                                </video>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contentslineone">
+                                <video id="parttwo">
+                                    <source src="myvideo/Dreamworksblue.m4v">
+                                </video>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <div class="footer"></div>
             </div>
         </div>
-        <!--▼jQueryの導入▼-->
-        <script src="http://code.jquery.com/jquery.min.js"></script>
-        <script src="JS/Controlshut.js"></script>
-        <script src="JS/pause.js"></script>
-        <script>
-            $.jInvertScroll(['.jinvert-scroll', '.jinvert-bg'], { //横スクロールさせる要素を指定。カンマ区切りで複数可。
-                height: 18000 //この値が大きいほどスクロールスピードが遅くなる。
-            });
-        </script>
+    </div>
+    <!--▼jQueryの導入▼-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="JS/Controlshut.js"></script>
+    <script src="JS/pause.js"></script>
+    <script src="JS/Timeismoney.js"></script>
+    <script src="JS/hareruya.js"></script>
+    <script src="JS/openwindowMax.js"></script>
 </body>
 
 </html>

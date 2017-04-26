@@ -1,5 +1,5 @@
 (function (a) {
-    a.jInvertScroll = function (f, c) {
+    a.hareruyaScroll = function (f, c) {
         var g = {
             width: "auto",
             height: "auto",
